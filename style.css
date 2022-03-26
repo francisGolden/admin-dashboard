@@ -1,0 +1,209 @@
+html, body {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+  
+#grid-container {
+display: grid;
+grid-template-columns: 1fr 6fr;
+grid-template-rows: 1fr 10fr;
+height: 100vh;
+}
+
+#sidebar {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: #DAB88B;
+    display: grid;
+
+    grid-template-rows: repeat(10, minmax(70px, 1vh));
+    padding: 6vh;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.card {
+border: 0px;
+}
+
+#header {
+display: grid;
+grid-template-rows: 1fr 1fr;
+}
+
+
+#main {
+display: grid;
+grid-template-columns: 2fr 1fr;
+
+}
+
+.main-card {
+    border-radius: 10px;
+    /* border: 0px solid rgb(54, 82, 92); */
+    background-color: #F3E9DD;
+    font-size: .8em;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.right-card {
+    border-radius: 10px;
+    border: 0px solid rgb(54, 82, 92);
+    background-color: #F3E9DD;
+    font-size: .8em;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.main-card:hover {
+    opacity: 0.4;
+}
+
+.right-card:hover {
+    opacity: 0.7;
+}
+
+
+#row-1 {
+display: grid;
+grid-template-columns: 2fr 1fr;
+}
+
+#left-header {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    justify-content: left;
+    align-items: center;
+    padding-right: 30px;
+    gap: 10px;
+    border: 0px solid black;
+}
+
+#search-img {
+    display: grid;
+    /* align-items: right; */
+    justify-content: right;
+}
+
+#account-img {
+    width: 3vw;
+}
+
+
+#left-header-bottom {
+display: grid;
+grid-template-rows: 1fr 1.5fr;
+grid-template-columns: 1fr 8fr;
+
+}
+
+#profile-icon {
+grid-row-start: 1;
+grid-row-end: 3;
+display: grid;
+align-items: center;
+justify-content: center;
+}
+
+#bell {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+} 
+
+#right-header > .card {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#right-header-bottom {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+#right-header-bottom > .card {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+button {
+    background-color: #4D96FF;
+    border-radius: 10px;
+    border: 0px solid white;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 5vw;
+    height: 5vh;
+}
+
+input {
+    /* width: 20vw; */
+    /* height: 5vh; */
+    border-radius: 30px;
+    background-color: #C0C0C0;
+    opacity: 0.7;
+    border: 0px solid black;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#right-header {
+display: grid;
+grid-template-columns: 1fr 1fr 3fr;
+}
+
+#row-2 {
+display: grid;
+grid-template-columns: 2fr 1fr;
+}
+
+#projects {
+display:grid;
+grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+padding: 10px;
+gap: 10px;
+/* box-sizing: border-box; */
+background-color: #B7CADB;
+overflow: hidden;
+
+}
+
+
+
+#right-main {
+display: grid;
+grid-template-rows: 1fr 1fr;
+
+gap: 30px;
+background-color: #B7CADB;
+padding: 10px;
+
+}
+
+#announcements {
+display: grid;
+grid-template-rows: repeat(3, 1fr);
+gap: 10px;
+
+}
+
+#trending {
+display: grid;
+grid-template-rows: repeat(3, 1fr);
+gap: 10px;
+}
